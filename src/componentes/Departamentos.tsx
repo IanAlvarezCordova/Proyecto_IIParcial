@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./GestionDepartamentos.css";
+import "./Gestion.css";
 
 interface Departamento {
   id: number;
