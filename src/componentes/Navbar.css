@@ -1,0 +1,21 @@
+/*Estilos para mi navbar*/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+  
+  }
+  
+  nav a:hover {
+    color: #646cff;
+    text-decoration: underline;
+  }
