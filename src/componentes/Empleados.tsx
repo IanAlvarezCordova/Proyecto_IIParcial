@@ -98,7 +98,7 @@ const Empleados: React.FC<PropsEmpleados> = ({
           </option>
         ))}
       </select>
-      <button onClick={agregarEmpleado}>Agregar Empleado</button>
+      <button className="btn-agregar" onClick={agregarEmpleado}>Agregar Empleado</button>
       <br />
       <table border={1} style={{ marginTop: "20px", width: "100%" }}>
         <thead>
@@ -133,7 +133,7 @@ const Empleados: React.FC<PropsEmpleados> = ({
               </td>
               <td>
                 {editando === empleado.id ? (
-                  <button onClick={() => guardarEdicion(empleado.id)}>
+                  <button className="btn-agregar" onClick={() => guardarEdicion(empleado.id)}>
                     Guardar
                   </button>
                 ) : (
@@ -143,7 +143,7 @@ const Empleados: React.FC<PropsEmpleados> = ({
                     Editar
                   </button>
                 )}
-                <button onClick={() => eliminarEmpleado(empleado.id)}>
+                <button className="btn-eliminar" onClick={() => eliminarEmpleado(empleado.id)}>
                   Eliminar
                 </button>
               </td>

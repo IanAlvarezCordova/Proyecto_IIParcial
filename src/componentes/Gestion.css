@@ -8,6 +8,15 @@
     background-color: #f3f9fe; /* Fondo azul claro */
 }
 
+  /* Botón de eliminar (color rojo) */
+  .btn-eliminar {
+    background-color: #e74c3c;
+  }
+  
+  .btn-eliminar:hover {
+    background-color: #c0392b;
+  }
+  
 /* Estilo para el título */
 h1 {
     text-align: center;

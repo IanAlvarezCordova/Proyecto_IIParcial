@@ -59,7 +59,7 @@ const GestionUsuarios: React.FC = () => {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                 />
-                <button onClick={agregarUsuario}>Guardar</button>
+                <button className="btn-agregar" onClick={agregarUsuario}>Guardar</button>
             </div>
 
             <h2>Lista de Usuarios</h2>

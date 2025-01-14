@@ -101,7 +101,7 @@ const Departamentos: React.FC<PropsDepartamento> = ({
         onChange={(e) => setNombreDepartamento(e.target.value)}
         placeholder="Nombre del departamento"
       />
-      <button onClick={agregarDepartamento}>Agregar Departamento</button>
+      <button className="btn-agregar" onClick={agregarDepartamento}>Agregar Departamento</button>
       <table border={1} style={{ marginTop: "20px", width: "100%" }}>
         <thead>
           <tr>
@@ -127,7 +127,7 @@ const Departamentos: React.FC<PropsDepartamento> = ({
               </td>
               <td>
                 {editando === departamento.id ? (
-                  <button onClick={() => guardarEdicion(departamento.id)}>
+                  <button className="btn-agregar" onClick={() => guardarEdicion(departamento.id)}>
                     Guardar
                   </button>
                 ) : (
@@ -139,7 +139,7 @@ const Departamentos: React.FC<PropsDepartamento> = ({
                     Editar
                   </button>
                 )}
-                <button onClick={() => eliminarDepartamento(departamento.id)}>
+                <button className="btn-eliminar" onClick={() => eliminarDepartamento(departamento.id)}>
                   Eliminar
                 </button>
               </td>
